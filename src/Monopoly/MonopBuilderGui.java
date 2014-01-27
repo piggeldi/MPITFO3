@@ -224,7 +224,6 @@ public class MonopBuilderGui extends javax.swing.JFrame
         propertiesPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
 
         boardPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
@@ -266,7 +265,7 @@ public class MonopBuilderGui extends javax.swing.JFrame
                 .addComponent(manageButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tradeButton)
-                .addGap(0, 210, Short.MAX_VALUE))
+                .addGap(0, 277, Short.MAX_VALUE))
         );
         bottomButtonPanelLayout.setVerticalGroup(
             bottomButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -297,13 +296,13 @@ public class MonopBuilderGui extends javax.swing.JFrame
                 .addContainerGap()
                 .addGroup(topLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(topLabelPanelLayout.createSequentialGroup()
+                        .addComponent(rollLabel)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(topLabelPanelLayout.createSequentialGroup()
                         .addComponent(nameLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(currentCashLabel)
-                        .addGap(55, 55, 55))
-                    .addGroup(topLabelPanelLayout.createSequentialGroup()
-                        .addComponent(rollLabel)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(80, 80, 80))))
         );
         topLabelPanelLayout.setVerticalGroup(
             topLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
