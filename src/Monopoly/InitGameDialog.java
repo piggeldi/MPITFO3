@@ -66,7 +66,7 @@ public class InitGameDialog extends javax.swing.JDialog
                 }
                 catch(NumberFormatException ex)
                 {
-                    JOptionPane.showMessageDialog(null, "The String "+ passGoTextField.getText() + " isn't a real number, try again");
+                    JOptionPane.showMessageDialog(null, "Die Eingabezeichenfolge "+ passGoTextField.getText() + " ist keine korrekte Nummer, versuchen Sie es erneut.");
                     isNum = false;
                 }
                 
@@ -332,13 +332,13 @@ public class InitGameDialog extends javax.swing.JDialog
 
         nameAreasPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        jLabel1.setText("Player 1:");
+        jLabel1.setText("Spieler 1:");
 
-        jLabel2.setText("Piece:");
+        jLabel2.setText("Figur:");
 
         comboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn1.setText("Lock In");
+        lockIn1.setText("Hinzu");
 
         javax.swing.GroupLayout P1Layout = new javax.swing.GroupLayout(P1);
         P1.setLayout(P1Layout);
@@ -380,13 +380,13 @@ public class InitGameDialog extends javax.swing.JDialog
 
         nameField2.setToolTipText("");
 
-        jLabel5.setText("Player 2:");
+        jLabel5.setText("Spieler 2:");
 
-        jLabel6.setText("Piece:");
+        jLabel6.setText("Figur:");
 
         comboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn2.setText("Lock In");
+        lockIn2.setText("Hinzu");
 
         javax.swing.GroupLayout P2Layout = new javax.swing.GroupLayout(P2);
         P2.setLayout(P2Layout);
@@ -426,13 +426,13 @@ public class InitGameDialog extends javax.swing.JDialog
                 .addComponent(lockIn2))
         );
 
-        jLabel7.setText("Player 3:");
+        jLabel7.setText("Spieler 3:");
 
-        jLabel8.setText("Piece:");
+        jLabel8.setText("Figur:");
 
         comboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn3.setText("Lock In");
+        lockIn3.setText("Hinzu");
 
         javax.swing.GroupLayout P3Layout = new javax.swing.GroupLayout(P3);
         P3.setLayout(P3Layout);
@@ -473,13 +473,13 @@ public class InitGameDialog extends javax.swing.JDialog
                 .addContainerGap())
         );
 
-        jLabel3.setText("Player 4:");
+        jLabel3.setText("Spieler 4:");
 
-        jLabel4.setText("Piece:");
+        jLabel4.setText("Figur:");
 
         comboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn4.setText("Lock In");
+        lockIn4.setText("Hinzu");
 
         javax.swing.GroupLayout P4Layout = new javax.swing.GroupLayout(P4);
         P4.setLayout(P4Layout);
@@ -517,13 +517,13 @@ public class InitGameDialog extends javax.swing.JDialog
                 .addComponent(lockIn4))
         );
 
-        jLabel9.setText("Player 5:");
+        jLabel9.setText("Spieler 5:");
 
-        jLabel10.setText("Piece:");
+        jLabel10.setText("Figur:");
 
         comboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn5.setText("Lock In");
+        lockIn5.setText("Hinzu");
 
         javax.swing.GroupLayout P5Layout = new javax.swing.GroupLayout(P5);
         P5.setLayout(P5Layout);
@@ -562,13 +562,13 @@ public class InitGameDialog extends javax.swing.JDialog
                 .addContainerGap())
         );
 
-        jLabel15.setText("Player 6:");
+        jLabel15.setText("Spieler 6:");
 
-        jLabel16.setText("Piece:");
+        jLabel16.setText("Figur:");
 
         comboBox6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn6.setText("Lock In");
+        lockIn6.setText("Hinzu");
 
         javax.swing.GroupLayout P6Layout = new javax.swing.GroupLayout(P6);
         P6.setLayout(P6Layout);
@@ -608,13 +608,13 @@ public class InitGameDialog extends javax.swing.JDialog
                 .addComponent(lockIn6))
         );
 
-        jLabel13.setText("Player 7:");
+        jLabel13.setText("Spieler 7:");
 
-        jLabel14.setText("Piece:");
+        jLabel14.setText("Figur:");
 
         comboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn7.setText("Lock In");
+        lockIn7.setText("Hinzu");
 
         javax.swing.GroupLayout P7Layout = new javax.swing.GroupLayout(P7);
         P7.setLayout(P7Layout);
@@ -696,7 +696,7 @@ public class InitGameDialog extends javax.swing.JDialog
 
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        optionPanelLabel.setText("House Rules");
+        optionPanelLabel.setText("Haus-Regeln");
 
         passGoTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -704,13 +704,13 @@ public class InitGameDialog extends javax.swing.JDialog
             }
         });
 
-        passGoLabel.setText("Pass Go amount: $");
+        passGoLabel.setText("Über Los Einkommen:");
 
-        landOnGoTextBox.setText("Land on Go pays double");
+        landOnGoTextBox.setText("Bei einem Zug auf Los doppeltes Einkommen");
 
-        taxCheckBox.setText("Tax on mortgage(15%)");
+        taxCheckBox.setText("Steueren auf Hypothek (15%)");
 
-        jailCheckBox.setText("Go to jail after 3 doubles");
+        jailCheckBox.setText("Ins Gefängnis nach 3 Pasch");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -731,7 +731,7 @@ public class InitGameDialog extends javax.swing.JDialog
                                 .addComponent(passGoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(taxCheckBox)
                             .addComponent(jailCheckBox))))
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -751,9 +751,9 @@ public class InitGameDialog extends javax.swing.JDialog
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        okButton.setText("Lets do this!!!");
+        okButton.setText("Start");
 
-        nahButton.setText("H'nah");
+        nahButton.setText("Abbrechen");
         nahButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nahButtonActionPerformed(evt);
@@ -762,13 +762,13 @@ public class InitGameDialog extends javax.swing.JDialog
 
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        jLabel20.setText("Player 10:");
+        jLabel20.setText("Spieler 10:");
 
-        jLabel21.setText("Piece:");
+        jLabel21.setText("Figur:");
 
         comboBox10.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn10.setText("Lock In");
+        lockIn10.setText("Hinzu");
 
         javax.swing.GroupLayout P10Layout = new javax.swing.GroupLayout(P10);
         P10.setLayout(P10Layout);
@@ -807,13 +807,13 @@ public class InitGameDialog extends javax.swing.JDialog
                 .addGap(38, 38, 38))
         );
 
-        jLabel11.setText("Player 8:");
+        jLabel11.setText("Spieler 8:");
 
-        jLabel12.setText("Piece:");
+        jLabel12.setText("Figur:");
 
         comboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn8.setText("Lock In");
+        lockIn8.setText("Hinzu");
 
         javax.swing.GroupLayout P8Layout = new javax.swing.GroupLayout(P8);
         P8.setLayout(P8Layout);
@@ -854,13 +854,13 @@ public class InitGameDialog extends javax.swing.JDialog
                 .addContainerGap())
         );
 
-        jLabel18.setText("Player 9:");
+        jLabel18.setText("Spieler 9:");
 
-        jLabel19.setText("Piece:");
+        jLabel19.setText("Figur:");
 
         comboBox9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        lockIn9.setText("Lock In");
+        lockIn9.setText("Hinzu");
 
         javax.swing.GroupLayout P9Layout = new javax.swing.GroupLayout(P9);
         P9.setLayout(P9Layout);
@@ -879,7 +879,7 @@ public class InitGameDialog extends javax.swing.JDialog
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                         .addComponent(comboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P9Layout.createSequentialGroup()
-                        .addGap(0, 75, Short.MAX_VALUE)
+                        .addGap(0, 86, Short.MAX_VALUE)
                         .addComponent(lockIn9)
                         .addContainerGap())))
         );
@@ -908,7 +908,7 @@ public class InitGameDialog extends javax.swing.JDialog
                     .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(171, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
