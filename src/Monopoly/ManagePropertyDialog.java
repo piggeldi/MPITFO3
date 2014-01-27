@@ -15,6 +15,26 @@ public class ManagePropertyDialog extends javax.swing.JDialog
     private Property p;
     private Player pl;
     
+    private class MortgageListener implements ActionListener
+    {
+        @Override
+        public void actionPerformed(ActionEvent e) 
+        {
+            if(p.getOwner().equalsIgnoreCase(pl.getName()))
+            {
+                //Player owns the property
+                p.mortgage();
+                pl.acceptPayment(p.getMortgagedPrice());
+                
+                logTextArea.setText(logTextArea.getText() + "\n"+pl.getName() + " hat erfolgreich eine Hyptothek bei " +p.getName()+ " über $" + p.getMortgagedPrice());
+            }
+            else
+            {
+                throw new UnknownError(pl.getName() + " gehört nicht" + p.getName());
+            }
+        }        
+    }
+    
     private class HotelListener implements ActionListener
     {
 
@@ -34,28 +54,8 @@ public class ManagePropertyDialog extends javax.swing.JDialog
                 }
         }
         
-    }
-    private class MortgageListener implements ActionListener
-    {
-
-        @Override
-        public void actionPerformed(ActionEvent e) 
-        {
-            if(p.getOwner().equalsIgnoreCase(pl.getName()))
-            {
-                //Player owns the property
-                p.mortgage();
-                pl.acceptPayment(p.getMortgagedPrice());
-                
-                logTextArea.setText(logTextArea.getText() + "\n"+pl.getName() + " hat erfolgreich eine Hyptothek bei " +p.getName()+ " über $" + p.getMortgagedPrice());
-            }
-            else
-            {
-                throw new UnknownError(pl.getName() + " gehört nicht" + p.getName());
-            }
-        }
-        
-    }
+    }    
+    
     private class BuyHousesListener implements ActionListener
     {
         
@@ -104,7 +104,6 @@ public class ManagePropertyDialog extends javax.swing.JDialog
         
     }
     
-
     /**
      * Creates new form ManagePropertyDialog
      */
@@ -126,11 +125,11 @@ public class ManagePropertyDialog extends javax.swing.JDialog
         else
         {
             if(!pl.hasAllPropertiesInGroup(pr.getGroup()))
-        {
-            buyHousesButton.setEnabled(false);
-            logTextArea.setText(logTextArea.getText() + "\nDu beseitzt nicht alle Karten der Gruppe: "+p.getGroup()+" \n"
-                    + "Desewegen kann es nicht ausgebaut werden."+p.getName());
-        }
+            {
+                buyHousesButton.setEnabled(false);
+                logTextArea.setText(logTextArea.getText() + "\nDu beseitzt nicht alle Karten der Gruppe: "+p.getGroup()+" \n"
+                        + "Desewegen kann es nicht ausgebaut werden."+p.getName());
+            }
         }
         
         buyHousesButton.addActionListener(new BuyHousesListener());

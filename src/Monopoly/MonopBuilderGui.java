@@ -28,24 +28,7 @@ public class MonopBuilderGui extends javax.swing.JFrame
      * A listener for the Trade button on the main window
      */
     private class TradeListener implements ActionListener
-    {
-        
-        private class OKListener implements ActionListener
-        {
-            private JDialog di;
-
-            public OKListener(JDialog d)
-            {
-                di = d;
-            }
-            @Override
-            public void actionPerformed(ActionEvent e) 
-            {
-                tradeChoice = (String)box.getSelectedItem();
-                di.dispose();
-            }
-            
-        }
+    {         
         @Override
         public void actionPerformed(ActionEvent e) 
         {
@@ -66,6 +49,23 @@ public class MonopBuilderGui extends javax.swing.JFrame
             updateLabels();
             
         }
+
+        private class OKListener implements ActionListener
+        {
+            private JDialog di;
+
+            public OKListener(JDialog d)
+            {
+                di = d;
+            }
+            @Override
+            public void actionPerformed(ActionEvent e) 
+            {
+                tradeChoice = (String)box.getSelectedItem();
+                di.dispose();
+            }
+            
+        }        
         
     }
     
