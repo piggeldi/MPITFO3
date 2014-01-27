@@ -79,17 +79,17 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="buyButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Yes, Please!"/>
+            <Property name="text" type="java.lang.String" value="Ja!!"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="noButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="No Thanks"/>
+            <Property name="text" type="java.lang.String" value="Nein!"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="wannaBuyLabel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Would you like to Buy this?"/>
+            <Property name="text" type="java.lang.String" value="M&#xf6;chtes Du das kaufen?"/>
           </Properties>
         </Component>
       </SubComponents>

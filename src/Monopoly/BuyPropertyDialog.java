@@ -57,7 +57,7 @@ public class BuyPropertyDialog extends javax.swing.JDialog
         initComponents();
         buyButton.addActionListener(new OKListener());
         noButton.addActionListener(new NoListener());
-        setTitle("Buying "+this.p.getName());
+        setTitle("Kaufen "+this.p.getName());
         setVisible(true);
         
     }
@@ -93,11 +93,11 @@ public class BuyPropertyDialog extends javax.swing.JDialog
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        buyButton.setText("Yes, Please!");
+        buyButton.setText("Ja!!");
 
-        noButton.setText("No Thanks");
+        noButton.setText("Nein!");
 
-        wannaBuyLabel.setText("Would you like to Buy this?");
+        wannaBuyLabel.setText("Möchtes Du das kaufen?");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -112,7 +112,7 @@ public class BuyPropertyDialog extends javax.swing.JDialog
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(178, 178, 178)
                 .addComponent(wannaBuyLabel)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
