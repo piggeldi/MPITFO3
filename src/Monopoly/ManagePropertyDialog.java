@@ -119,7 +119,7 @@ public class ManagePropertyDialog extends javax.swing.JDialog
         
         if(!(p instanceof Property))
         {
-            logTextArea.setText("Since " + p.getName() + " isn't improvable, you can only Mortgage it");
+            logTextArea.setText(p.getName() + " kann nicht ausgebaut werden, du kannst nur eine Hypothek aufnehmen.");
             houseNumField.setEditable(false);
             buyHousesButton.setEnabled(false);
         }
@@ -128,8 +128,8 @@ public class ManagePropertyDialog extends javax.swing.JDialog
             if(!pl.hasAllPropertiesInGroup(pr.getGroup()))
         {
             buyHousesButton.setEnabled(false);
-            logTextArea.setText(logTextArea.getText() + "\nYou don't have all the properties in the "+p.getGroup()+" group, \n"
-                    + "therefore you can't improve "+p.getName());
+            logTextArea.setText(logTextArea.getText() + "\nDu beseitzt nicht alle Karten der Gruppe: "+p.getGroup()+" \n"
+                    + "Desewegen kann es nicht ausgebaut werden."+p.getName());
         }
         }
         
@@ -186,15 +186,16 @@ public class ManagePropertyDialog extends javax.swing.JDialog
             }
         });
 
-        jLabel1.setText("Number of Houses that you want: ");
+        jLabel1.setText("Anzahl der Häuser: ");
 
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        buyHousesButton.setText("Buy Houses");
+        buyHousesButton.setText("Haus kaufen");
 
-        mortgageButton.setText("Mortgage");
+        mortgageButton.setText("Hypothek");
 
-        hotelButton.setText("Buy a Hotel");
+        hotelButton.setText("Hotel kaufen");
+        hotelButton.setToolTipText("");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -220,7 +221,7 @@ public class ManagePropertyDialog extends javax.swing.JDialog
                 .addContainerGap())
         );
 
-        jLabel2.setText("Total Cost: ");
+        jLabel2.setText("Gesamte Kosten : ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

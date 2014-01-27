@@ -4,7 +4,7 @@ import java.awt.geom.Point2D;
 
 /**
  *
- * @authore Frederik Giacone
+ * @authore Thomas
  */
 public class Space 
 {

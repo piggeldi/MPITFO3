@@ -81,12 +81,12 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="chooseButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Choose"/>
+            <Property name="text" type="java.lang.String" value="Ausw&#xe4;hlen"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="statsButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Stats"/>
+            <Property name="text" type="java.lang.String" value="Statistik"/>
           </Properties>
         </Component>
       </SubComponents>

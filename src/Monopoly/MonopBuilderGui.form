@@ -7,7 +7,6 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -128,7 +127,7 @@
                   <Component id="manageButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="tradeButton" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="256" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="210" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -150,22 +149,22 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="rollButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Roll"/>
+            <Property name="text" type="java.lang.String" value="W&#xfc;rfeln"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="finishTurnButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Finish Turn"/>
+            <Property name="text" type="java.lang.String" value="Zug beenden"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="tradeButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Trade"/>
+            <Property name="text" type="java.lang.String" value="Handeln"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="manageButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Manage Properties"/>
+            <Property name="text" type="java.lang.String" value="Eigentum verwalten"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -217,7 +216,8 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="currentCashLabel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Balance: "/>
+            <Property name="text" type="java.lang.String" value="Saldo: "/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="nameLabel">
@@ -227,7 +227,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="rollLabel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Roll: "/>
+            <Property name="text" type="java.lang.String" value="W&#xfc;rfeln: "/>
           </Properties>
         </Component>
       </SubComponents>

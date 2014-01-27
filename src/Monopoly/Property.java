@@ -148,7 +148,7 @@ public class Property extends Space
         }
         else 
         {
-            throw new UnknownError(owner + " tried to put " + numHouses + " on " + name);
+            throw new UnknownError(owner + " hat versucht " + numHouses + " auf " + name + " zu bauen");
         }
     }
     
@@ -177,7 +177,7 @@ public class Property extends Space
     {
         if(owner.equalsIgnoreCase(""))
         {
-            return "The Bank";
+            return "Die Bank";
         }
         return owner;
     }
@@ -194,21 +194,21 @@ public class Property extends Space
     public String toString()
     {
         return name + "\n"
-                + "\nOwner: "+owner
-                + "\nColor Group: "+group
-                + "\nNumber of houses: " +numHouses
-                + "\nBuy: $"+price
-                + "\nMortgage: $"+price / 2
-                + "\nNo Houses: $"+BASE
-                + "\nAll Owned: $"+BASE * 2
-                + "\n1 House: $" +HOUSE1
-                + "\n2 Houses: $"+HOUSE2
-                + "\n3 Houses: $"+HOUSE3
-                + "\n4 Houses: $"+HOUSE4
+                + "\nBesitzer: "+owner
+                + "\nFarbgruppe: "+group
+                + "\nAnzahl Häuser: " +numHouses
+                + "\nKaufpreis: $"+price
+                + "\nHypothek: $"+price / 2
+                + "\nOhne Häuser: $"+BASE
+                + "\nAlle im Besitz: $"+BASE * 2
+                + "\n1 Haus: $" +HOUSE1
+                + "\n2 Häuser: $"+HOUSE2
+                + "\n3 Häuser: $"+HOUSE3
+                + "\n4 Häuser: $"+HOUSE4
                 + "\nHotel: $"+HOTEL
-                + "\nMortgaged: "+mortgaged
-                + "\nHouses Cost $"+ONE_HOUSE
-                + "\nHotels $"+ONE_HOUSE + " plus 4 Houses";
+                + "\nMit Hypothek: "+mortgaged
+                + "\nKosten pro Haus $"+ONE_HOUSE
+                + "\nKosten Hotel $"+ONE_HOUSE + " plus 4 Häuser";
     }
     
     /**
