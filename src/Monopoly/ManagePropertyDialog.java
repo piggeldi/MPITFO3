@@ -119,7 +119,7 @@ public class ManagePropertyDialog extends javax.swing.JDialog
         
         if(!(p instanceof Property))
         {
-            logTextArea.setText("Since " + p.getName() + " isn't improvable, you can only Mortgage it");
+            logTextArea.setText(p.getName() + " kann nicht ausgebaut werden, du kannst nur eine Hypothek aufnehmen.");
             houseNumField.setEditable(false);
             buyHousesButton.setEnabled(false);
         }
@@ -128,8 +128,8 @@ public class ManagePropertyDialog extends javax.swing.JDialog
             if(!pl.hasAllPropertiesInGroup(pr.getGroup()))
         {
             buyHousesButton.setEnabled(false);
-            logTextArea.setText(logTextArea.getText() + "\nYou don't have all the properties in the "+p.getGroup()+" group, \n"
-                    + "therefore you can't improve "+p.getName());
+            logTextArea.setText(logTextArea.getText() + "\nDu beseitzt nicht alle Karten der Gruppe: "+p.getGroup()+" \n"
+                    + "Desewegen kann es nicht ausgebaut werden."+p.getName());
         }
         }
         

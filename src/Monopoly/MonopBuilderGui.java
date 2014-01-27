@@ -52,7 +52,7 @@ public class MonopBuilderGui extends javax.swing.JFrame
             JDialog d = new JDialog(new JFrame(), true);
             d.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
             
-            d.setTitle("Trade with whom..?");
+            d.setTitle("Mit wem soll gehandelt werden..?");
             box = new JComboBox();
             box.setModel(new DefaultComboBoxModel(bank.getPlayerNames()));
             d.add(box, BorderLayout.NORTH);
@@ -114,13 +114,13 @@ public class MonopBuilderGui extends javax.swing.JFrame
             currentPlayer.roll();
             if(x + currentPlayer.getRoll1() + currentPlayer.getRoll2() >= 40 && !currentPlayer.isInJail())
             {
-                logTextArea.setText(logTextArea.getText() + currentPlayer.getName() + " has passed Go. They are rewarded $" 
+                logTextArea.setText(logTextArea.getText() + currentPlayer.getName() + " ist über Los gekommen. Er bekommt $" 
                         + bank.PASS_GO_AMOUNT+"!\n");
             }
             if(currentPlayer.hasDoubles())
             {
-                logTextArea.setText(logTextArea.getText() + currentPlayer.getName() + " has rolled doubles! "
-                        + "They get to roll again!\n");
+                logTextArea.setText(logTextArea.getText() + currentPlayer.getName() + " hat einen Pasch! "
+                        + "Er darf noch einmal Würfeln!\n");
                 if(currentPlayer.getNumDoubles() == 3 && bank.tripDoubles())
                 {
                     currentPlayer.getPiece().moveTo(29);
@@ -390,7 +390,7 @@ public class MonopBuilderGui extends javax.swing.JFrame
         }
         catch(IOException e)
         {
-            JOptionPane.showMessageDialog(null, "No image at" + "images/board50borderless.png");
+            JOptionPane.showMessageDialog(null, "Kein Bild in " + "images/board50borderless.png");
             System.exit(0);
         }
         
