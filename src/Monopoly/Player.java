@@ -105,14 +105,14 @@ public class Player implements Comparable<Player>
             {
                 balance -= x;
                 p.addHotel();
-                return "\n"+name+" successfully bought a hotel for "+p.getName();
+                return "\n"+name+" hat ein Hotel für "+p.getName()+ "gekauft";
             }
             else
             {
-                return "\n"+name+" can't afford a Hotel on " + p.getName();
+                return "\n"+name+" kann kein Hotel für " + p.getName()+ "kaufen";
             }
         }
-        throw new UnknownError(name+" doesn't own "+p.getName());
+        throw new UnknownError(name+" besitzt nicht "+p.getName());
     }
     
     /**
@@ -131,14 +131,14 @@ public class Player implements Comparable<Player>
             {
                 balance -= x;
                 p.addHouses(num);
-                return "\n"+name+" successfully bought " + num + " houses!";
+                return "\n"+name+" hat " + num + " Häuser gekauft!";
             }
             else
             {
-                return "\n"+name+" can't afford " + num + " houses!";
+                return "\n"+name+" kann keine " + num + " Häuser kaufen!";
             }
         }
-        throw new UnknownError(name+" doesn't own "+p.getName());
+        throw new UnknownError(name+" bestizt nicht "+p.getName());
     }
     
     /**
@@ -232,7 +232,7 @@ public class Player implements Comparable<Player>
             //If you own it, nothing happens
             if(properties.contains((Property)s))
             {
-                return s.getName() + " belongs to you, no money is due\n";
+                return s.getName() + " gehört bereits dir, kein Geld ist fällig\n";
             }
             //Not yours, you have to pay
             else
@@ -249,7 +249,7 @@ public class Player implements Comparable<Player>
                         {
                             return buy(u, b);
                         }
-                        return name + " chose not to buy " + u.getName()+"\n";
+                        return name + " hat gewählt " + u.getName()+" nicht zu kaufen\n";
                     }
                     else
                     {
@@ -269,7 +269,7 @@ public class Player implements Comparable<Player>
                         {
                             return buy(r, b);
                         }
-                        return name + " chose not to buy " + r.getName()+"\n";
+                        return name + " hat gewählt " + r.getName()+"nicht zu kaufen\n";
                     }
                     else
                     {
@@ -290,7 +290,7 @@ public class Player implements Comparable<Player>
                         {
                             return buy(p, b);
                         }
-                        return name + " chose not to buy " + p.getName()+"\n";
+                        return name + " hat gewählt " + p.getName()+"nicht zu kaufen\n";
                     }
                     else
                     {
@@ -320,7 +320,7 @@ public class Player implements Comparable<Player>
                     balance -= (total / 10);
                     x = (total / 10);
                 }
-                return name + " paid $"+ x +" in Income Tax\n";
+                return name + " bezahlt $"+ x +" in die Einkommensteuer\n";
                 
             }
             else if(s.getName().equalsIgnoreCase("Go to Jail"))
@@ -334,7 +334,7 @@ public class Player implements Comparable<Player>
             {
                 balance -= 75;
                 
-                return name + " paid $75 in Luxury Tax\n";
+                return name + " bezahlt $75 in Luxussteuer\n";
             }
             else if(s.getName().equalsIgnoreCase("Chance"))
             {
@@ -347,25 +347,25 @@ public class Player implements Comparable<Player>
             else if(s.getName().equalsIgnoreCase("Free Parking"))
             {
                 //Do Nothing
-                return name + " has received Free Parking. Yay!\n";
+                return name + " ist auf Frei Parken. Yay!\n";
             }
             else if(s.getName().equalsIgnoreCase("Go"))
             {
                 balance += b.LAND_ON_GO_AMOUNT;
                 
-                return name + " landed on Go. "+name+" received $"+ b.LAND_ON_GO_AMOUNT + "\n";
+                return name + " ist auf Start gelandet. "+name+" bekommt $"+ b.LAND_ON_GO_AMOUNT + "\n";
             }
             else if(s.getName().equalsIgnoreCase("Jail"))
             {
                 if(inJail)
                 {
-                    return name + " has been sent to Jail for being dumb. Feel free to judge them\n";
+                    return name + "  wurde ins Gefängnis geschickt.\n";
                 }
-                return name + " is JUST VISITNG Jail. Please don't judge them in any way\n";
+                return name + " ist nur zu Besuch im Gefängnis.\n";
             }
             else
             {
-                throw new UnknownError("This should never have been called");
+                throw new UnknownError("Das sollte nie aufgerufen werden");
             }
             
         }
@@ -397,7 +397,7 @@ public class Player implements Comparable<Player>
                 //Eh, dont wanna deal w/ specials now
             }
             
-            if(c.getMessage().equalsIgnoreCase("Go Directly to Jail - Do not Pass Go, do not collect $200"))
+            if(c.getMessage().equalsIgnoreCase("Gehen Sie direkt ins Geföngniss. Ziehen sie nicht über Los."))
             {
                 inJail = true;
             }
@@ -410,12 +410,12 @@ public class Player implements Comparable<Player>
             {
                 piece.moveTo(piece.getPosition() - 3);
                 
-                return name + " moved back 3 spaces\n" + landOn(board, b);
+                return name + " ist 3 Schritte zurück gegangen\n" + landOn(board, b);
             }
             else if(c.getMessage().equalsIgnoreCase("Get out of Jail Free\n"))
             {
                 hasGetOutOfJail = true;
-                return name + " has recieved a Get Out of Jail Free Card!\n";
+                return name + " hat eine 'Sie kommen aus dem Gefängsnis frei Karte' bekommen\n";
             }
             //Eh, dont wanna deal w/ specials now
         }
@@ -432,9 +432,9 @@ public class Player implements Comparable<Player>
             
             if(x < 0)
             {
-                return name + " paid $" + (-1 * x) + "\n";
+                return name + " bezahlt $" + (-1 * x) + "\n";
             }
-            return name + " received $" + x +"\n";
+            return name + " bekommt $" + x +"\n";
         }
         
     }
@@ -456,7 +456,7 @@ public class Player implements Comparable<Player>
         if(r.getOwner().equalsIgnoreCase(name))
         {
             //Your property, no rent paid
-            return r.getName() + " belongs to "+ r.getOwner() +", therefore no rent is due\n";
+            return r.getName() + " gehört "+ r.getOwner() +", keine Miete ist fällig\n";
         }
         else if(!r.isMortgaged())
         {
@@ -466,17 +466,17 @@ public class Player implements Comparable<Player>
             
             if(p.numRailroadsOwned == 0)
             {
-                throw new IllegalStateException(p.getName() + " does not own " + r.getName());
+                throw new IllegalStateException(p.getName() + " gehört nicht " + r.getName());
             }
             
             int x = RRPayout(p.numRailroadsOwned);
             balance -= x;
             p.acceptPayment(x);
             
-            return name + " paid $" +x+ " to " + r.getOwner() + " for landing on " +r.getName()+ "\n";
+            return name + " bezahlt $" +x+ " an " + r.getOwner() + ", weil er auf " +r.getName()+ "gelandet ist\n";
         }
         //Mortgaged, no Payment. GG
-        return r.getName() + " is mortgaged, therefore no rent is due\n";
+        return r.getName() + " ist auf Hypothek, keine Miete fällig\n";
     }
     
     /**
@@ -503,14 +503,14 @@ public class Player implements Comparable<Player>
             p.acceptPayment(x);
             balance -= x;
             
-            return name+" paid $" +u.currentRent()+ " to " + u.getOwner() +" for landing on " +u.getName()+ "\n";
+            return name+" bezahlt $" +u.currentRent()+ " an " + u.getOwner() +", weil er auf " +u.getName()+ "gelandet ist\n";
         }
         else
         {
-            throw new IllegalStateException(p.getName() + " does not own " + u.getName());
+            throw new IllegalStateException(p.getName() + " besitzt nicht " + u.getName());
         }
         
-        return name + "paid $" + x + " to " + u.getOwner()+"\n";
+        return name + "bezahlt $" + x + " an " + u.getOwner()+"\n";
     }
     
     /**
@@ -524,7 +524,7 @@ public class Player implements Comparable<Player>
         if(p.getOwner().equalsIgnoreCase(name))
         {
             //Your property, no rent paid
-            return p.getName() + " belongs to " + p.getOwner() + ", therefore no rent is due\n";
+            return p.getName() + " gehört zu " + p.getOwner() + ", keine Miete fällig\n";
         }
         else if(!p.isMortgaged())
         {
@@ -535,10 +535,10 @@ public class Player implements Comparable<Player>
                     acceptPayment(
                     p.currentRent());
             
-            return name +" paid $" +p.currentRent()+ " to " + p.getOwner()+" for landing on " +p.getName()+"\n";
+            return name +" bezahlt $" +p.currentRent()+ " an " + p.getOwner()+", weil er auf " +p.getName()+" gelandet ist\n";
         }
         //Mortgaged, no Payment. GG
-        return p.getName() + " is mortgaged, therefore no rent is due\n";
+        return p.getName() + " ist auf Hypothek, keine Miete fällig\n";
     }
     
     /**
@@ -672,14 +672,14 @@ public class Player implements Comparable<Player>
                 numUtilitiesOwned++;
             }
             p.setOwner(name);
-            return name + " successfully bought "+p.getName()+"\n";
+            return name + " hat erfolgreich "+p.getName()+" gekauft\n";
             
             
             
         }
         
-        return p.getName() + " is either owned, "
-                + "or you have insufficient funds\n";
+        return p.getName() + " hat schon einen Besitzer, "
+                + "oder du hast zu wenig Geld\n";
     }
     
     /**
@@ -694,21 +694,21 @@ public class Player implements Comparable<Player>
         {
             if(properties.get(properties.indexOf(p)).isMortgaged())
             {
-                return "This property is already mortgaged."
-                        + "You can't mortgage a Property twice.\n";
+                return "Dieses Grundstück ist bereits auf Hypothek."
+                        + "Du kannst keine zwei Hypotheken setzen\n";
             }
             else
             {
                 properties.get(properties.indexOf(p)).mortgage();
                 balance += p.getMortgagedPrice();
                 
-                return "You successfully mortgaged "+ p.getName() +" for  "
-                        + p.getMortgagedPrice()+"\n";
+                return "Du hast erfolgreich eine Hypothek für "+ p.getName() +" in Höhe von  "
+                        + p.getMortgagedPrice()+" gesetzt\n";
             }
         }
         
-        return "You don't own "+ p.getName() + ", therefore you can't "
-                + "mortgage it\n";
+        return "Du besitzt "+ p.getName() + "nicht, also kannst du keine "
+                + "Hyptohek setzen\n";
         
     }
     
@@ -731,18 +731,18 @@ public class Player implements Comparable<Player>
         {
             if(balance - p.getMortgagedPrice() <= 0)
             {
-                return "You don't have enough money to do this\n";
+                return "Du hast nicht genug Geld\n";
             }
             
             properties.get(properties.indexOf(p)).unMortgage();
             balance -= p.getMortgagedPrice() /* * 1.1 10 percent interest*/;
             
-            return "You successfully unmortgaged "+p.getName()+ " for "+
-                    p.getMortgagedPrice() + "\n" /* * 1.1 10 percent interest*/;
+            return "Du hast erfolgreich die Hypothek von "+p.getName()+ " in Höhe von "+
+                    p.getMortgagedPrice() + "zurückgesetzt\n" /* * 1.1 10 percent interest*/;
         }
         
-        return "You don't own "+ p.getName() + ", therefore you can't "
-                + "mortgage it\n";
+        return "Du bestitzt "+ p.getName() + "nicht, also kannst du keine "
+                + "Hypothek setzen\n";
     }
 
     @Override
