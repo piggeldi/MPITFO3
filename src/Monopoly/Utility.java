@@ -25,12 +25,12 @@ public class Utility extends Property
     public String toString()
     {
         return name + "\n"
-                + "\nOwner: " +owner + "\n"
-                + "Buy: $" + price + "\n"
-                + "Mortgage: $" + price / 2 +"\n"
-                + "Own 1 Utlity: $(4 x roll)\n"
-                + "Own both Utilities: $(10 x roll)\n"
-                + "Mortgaged: "+mortgaged;
+                + "\nBesitzer: " +owner + "\n"
+                + "Kaufen: $" + price + "\n"
+                + "Hypothek: $" + price / 2 +"\n"
+                + "Besitze ein Werk: $(4 x Augenzahl)\n"
+                + "Besitze beide Werke: $(10 x Augenzahl)\n"
+                + "Hypothek: "+mortgaged;
     }
     
     

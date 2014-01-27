@@ -245,13 +245,13 @@ public class MonopBuilderGui extends javax.swing.JFrame
 
         bottomButtonPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        rollButton.setText("Roll");
+        rollButton.setText("Würfeln");
 
-        finishTurnButton.setText("Finish Turn");
+        finishTurnButton.setText("Zug beenden");
 
-        tradeButton.setText("Trade");
+        tradeButton.setText("Handeln");
 
-        manageButton.setText("Manage Properties");
+        manageButton.setText("Eigentum verwalten");
 
         javax.swing.GroupLayout bottomButtonPanelLayout = new javax.swing.GroupLayout(bottomButtonPanel);
         bottomButtonPanel.setLayout(bottomButtonPanelLayout);
@@ -266,7 +266,7 @@ public class MonopBuilderGui extends javax.swing.JFrame
                 .addComponent(manageButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tradeButton)
-                .addGap(0, 256, Short.MAX_VALUE))
+                .addGap(0, 210, Short.MAX_VALUE))
         );
         bottomButtonPanelLayout.setVerticalGroup(
             bottomButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -282,11 +282,12 @@ public class MonopBuilderGui extends javax.swing.JFrame
 
         topLabelPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        currentCashLabel.setText("Balance: ");
+        currentCashLabel.setText("Saldo: ");
+        currentCashLabel.setToolTipText("");
 
         nameLabel.setText("Name: ");
 
-        rollLabel.setText("Roll: ");
+        rollLabel.setText("Würfeln: ");
 
         javax.swing.GroupLayout topLabelPanelLayout = new javax.swing.GroupLayout(topLabelPanel);
         topLabelPanel.setLayout(topLabelPanelLayout);
