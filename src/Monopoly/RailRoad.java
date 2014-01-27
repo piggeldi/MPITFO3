@@ -4,7 +4,7 @@ import java.awt.geom.Point2D;
 
 /**
  *
- * @authore Frederik
+ * @authore Thomas
  */
 public class RailRoad extends Property
 {
@@ -17,13 +17,13 @@ public class RailRoad extends Property
     public String toString()
     {
         return  name + "\n"
-                + "\nOwner : " + owner 
-                + "\nBuy: $"+price+""
-                + "\nMortgage: $"+price / 2 
-                + "\nOwn 1 Railroad: $25" 
-                + "\nOwn 2 Railroads: $50"
-                + "\nOwn 3 Railroad: $100" 
-                + "\nOwn 4 Railroads: $200";
+                + "\nBesitzer : " + owner 
+                + "\nKaufen: $"+price+""
+                + "\nHypothek: $"+price / 2 
+                + "\nBesitzt 1 Bahnhof: $25" 
+                + "\nBesitzt 2 Bahnhof: $50"
+                + "\nBesitzt 3 Bahnhof: $100" 
+                + "\nBesitzt 4 Bahnhof: $200";
     }
     
     

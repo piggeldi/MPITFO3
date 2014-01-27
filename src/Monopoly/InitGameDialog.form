@@ -7,7 +7,6 @@
   </NonVisualComponents>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -183,12 +182,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 1:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 1:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox1">
@@ -205,7 +204,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -269,12 +268,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 2:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 2:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox2">
@@ -291,7 +290,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -353,12 +352,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel7">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 3:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 3:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox3">
@@ -375,7 +374,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -433,12 +432,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 4:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 4:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox4">
@@ -455,7 +454,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -514,12 +513,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 5:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 5:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox5">
@@ -536,7 +535,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn5">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -597,12 +596,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 6:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 6:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel16">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox6">
@@ -619,7 +618,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn6">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -681,12 +680,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel13">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 7:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 7:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox7">
@@ -703,7 +702,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn7">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -742,7 +741,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="78" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -770,7 +769,7 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="optionPanelLabel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="House Rules"/>
+            <Property name="text" type="java.lang.String" value="Haus-Regeln"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="passGoTextField">
@@ -780,34 +779,34 @@
         </Component>
         <Component class="javax.swing.JLabel" name="passGoLabel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pass Go amount: $"/>
+            <Property name="text" type="java.lang.String" value="&#xdc;ber Los Einkommen:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JCheckBox" name="landOnGoTextBox">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Land on Go pays double"/>
+            <Property name="text" type="java.lang.String" value="Bei einem Zug auf Los doppeltes Einkommen"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JCheckBox" name="taxCheckBox">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Tax on mortgage(15%)"/>
+            <Property name="text" type="java.lang.String" value="Steueren auf Hypothek (15%)"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jailCheckBox">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Go to jail after 3 doubles"/>
+            <Property name="text" type="java.lang.String" value="Ins Gef&#xe4;ngnis nach 3 Pasch"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
     <Component class="javax.swing.JButton" name="okButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Lets do this!!!"/>
+        <Property name="text" type="java.lang.String" value="Start"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="nahButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="H&apos;nah"/>
+        <Property name="text" type="java.lang.String" value="Abbrechen"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nahButtonActionPerformed"/>
@@ -832,7 +831,7 @@
                       <Component id="P8" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="P9" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="171" max="32767" attributes="0"/>
+                  <EmptySpace pref="176" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -904,12 +903,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel20">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 10:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 10:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel21">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox10">
@@ -926,7 +925,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn10">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -988,12 +987,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 8:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 8:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox8">
@@ -1010,7 +1009,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn8">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1035,7 +1034,7 @@
                               <Component id="comboBox9" min="-2" pref="96" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="86" max="32767" attributes="0"/>
                               <Component id="lockIn9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1067,12 +1066,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel18">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Player 9:"/>
+                <Property name="text" type="java.lang.String" value="Spieler 9:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel19">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Piece:"/>
+                <Property name="text" type="java.lang.String" value="Figur:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="comboBox9">
@@ -1089,7 +1088,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="lockIn9">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lock In"/>
+                <Property name="text" type="java.lang.String" value="Hinzu"/>
               </Properties>
             </Component>
           </SubComponents>
