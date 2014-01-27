@@ -158,7 +158,7 @@ public class Bank
             pr.setOwner("");
         }
         bankrupt.add(players.remove(players.indexOf(p)));
-        return p.getName() + " has become bankrupt!";
+        return p.getName() + " wurde ausgeraubnt!";
     }
     private void initPieces()
     {
@@ -272,38 +272,30 @@ public class Bank
     private void initGiftCards()
     {
         //Community Chest Cards
-        communityChest.add(new Card("Community Chest", "Advance to Go(Collect $200))", 0, 0, false));
-        communityChest.add(new Card("Community Chest", "Bank Error in your favor - collect $200", 200, -1, false));
-        communityChest.add(new Card("Community Chest", "Doctors's fees - Pay $50", -50, -1, false));
-        communityChest.add(new Card("Community Chest", "Get Out of Jail Free", 0, -1, true));
-        communityChest.add(new Card("Community Chest", "Go Directly to Jail - Do not Pass Go, do not collect $200", 0, 10, false));
-        //communityChest.add(new Card("Community Chest", "Grand opening of the Opera, collect $50 from each player", -50, -1, true));
-        communityChest.add(new Card("Community Chest", "Income Tax Refund - Collect $20", 20, -1, false));
-        communityChest.add(new Card("Community Chest", "Life Insurance Matures, collect $100", 100, -1, false));
-        communityChest.add(new Card("Community Chest", "Pay Hospital Fee of $100", -100, -1, false));
-        communityChest.add(new Card("Community Chest", "Pay School Fee of $50", -50, -1, false));
-        //communityChest.add(new Card("Community Chest", "You are assessed for Street Repairs - pay $40 per house, $115 per Hotel", -40, -1, true));
-        communityChest.add(new Card("Community Chest", "You have won second prize in a Beauty contest, collect $10", 10, -1, false));
-        communityChest.add(new Card("Community Chest", "You inherit $100", 100, -1, false));
-        communityChest.add(new Card("Community Chest", "From sale of Stock you get $50", 50, -1, false));
-        communityChest.add(new Card("Community Chest", "XMAS Fund Matures, collect $100", 100, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Rückevor bis Los", 0, 0, false));
+        communityChest.add(new Card("Ereignisfeld", "Bankfehler zu deinen Gunsten (200)", 200, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Arzt gebühren (50)", -50, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Gefängnisfreikarte", 0, -1, true));
+        communityChest.add(new Card("Ereignisfeld", "Gehen Sie direkt ins Geföngniss. Ziehen sie nicht über Los.", 0, 10, false));
+        communityChest.add(new Card("Ereignisfeld", "Einkommenssteuerrückzahlung - Sie erhalten $20", 20, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Lebensversicherung wird fällig. Sie erhalten $100", 100, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Zahlen Sie die Krankenhausgebühren $100", -100, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Zahlen Sie die Schulgebühren $50", -50, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Sie haben den zweiten Preis in einem Schönheitswetbewerb gewonnen. Sie erhalten $10", 10, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Sie erben $100", 100, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Sie erhalten $50 aus einem Aktienverkauf", 50, -1, false));
+        communityChest.add(new Card("Ereignisfeld", "Sie erhalten $100 Dividende aus Aktieninvestitionen", 100, -1, false));
         
-        //Chance cards
-        chance.add(new Card("Chance", "Advance to Go(Collect $200)", 0, 0, false));
-        chance.add(new Card("Chance", "Advance to Illinois Ave. - if you pass Go, collect $200", 0, 24, false));
-//        chance.add(new Card("Chance", "Advance token to the nearest Utility.\nIf unowned, you may buy it from the Bank.\nIf owned, throw dice and pay owner a total of 10 times the amount shown.", 0, -1, true));
-//        chance.add(new Card("Chance", "Advance token to the nearest Railroad.\nIf unowned, you may buy it from the Bank.\nIf owned, pay the owner twice the amount that they are entitled", 0, -1, true));
-//        chance.add(new Card("Chance", "Advance token to the nearest Railroad.\nIf unowned, you may buy it from the Bank.\nIf owned, pay the owner twice the amount that they are entitled", 0, -1, true));
-        chance.add(new Card("Chance", "Advance to St. Charles Place - if you pass Go, collect $200", 0, 11, false));
-        chance.add(new Card("Chance", "Bank pays you dividend of $50", 50, -1, false));
-        chance.add(new Card("Chance", "Get out of Jail free.", 0, -1, true));
-        chance.add(new Card("Chance", "Go back 3 spaces", 0, -1, true));
-        //chance.add(new Card("Chance", "You are assessed for street repairs, pay $25 for each house and $100 for each hotel", 0, -1, true));
-        chance.add(new Card("Chance", "Pay Poor tax of $15", -15, -1, false));
-        chance.add(new Card("Chance", "Take a trip on the Reading Railroad - if you pass Go, collect $200", 0, 5, false));
-        chance.add(new Card("Chance", "Take a walk on the Boardwalk - advance token to Boardwalk", 0, 39, false));
-        //chance.add(new Card("Chance", "You have been elected Chairman of the board, pay each player $50", -50, -1, true));
-        chance.add(new Card("Chance", "Building Loan Matures, collect $150", 150, -1, false));
+        chance.add(new Card("Ereignisfeld", "Gehen Sie zu Illinois Ave. - wenn Sie über LOS gehen erhalten Sie $200", 0, 24, false));
+        chance.add(new Card("Ereignisfeld", "Gehen Sie zu St. Charles Place - wenn Sie über LOS gehen erhalten Sie $200", 0, 11, false));
+        chance.add(new Card("Ereignisfeld", "Gehen Sie direkt auf Los.", 0, 0, false));
+        chance.add(new Card("Ereignisfeld", "Bank zahlt Ihnen eine Dividende $50", 50, -1, false));
+        chance.add(new Card("Ereignisfeld", "Gehen Sie aus dem Gefängnis.", 0, -1, true));
+        chance.add(new Card("Ereignisfeld", "Gehen Sie 3 Felder zurück", 0, -1, true));
+        chance.add(new Card("Ereignisfeld", "Zahlen Sie Armensteuer $15", -15, -1, false));
+        chance.add(new Card("Ereignisfeld", "Gehen Sie zum Bahnhof - wenn Sie über LOS gehen erhalten Sie $200", 0, 5, false));
+        chance.add(new Card("Ereignisfeld", "Gehen Sie zum Boardwalk", 0, 39, false));
+        chance.add(new Card("Ereignisfeld", "Sie erhalten ein Gebäudedarlehen von $150", 150, -1, false));
     }
     private void initCards()
     {
