@@ -10,7 +10,7 @@ import java.awt.geom.Point2D;
 
 /**
  *
- * @authore Frederik
+ * @authore Thomas
  */
 public class ChoosePropertyDialog extends javax.swing.JDialog 
 {
@@ -70,7 +70,7 @@ public class ChoosePropertyDialog extends javax.swing.JDialog
         super(parent, true);
         p = pl;
         
-        setTitle("Choose a Property");
+        setTitle("Wähle eine Eigenschaft");
         
         initComponents();
         chooseButton.addActionListener(new ChooseListener());
@@ -113,9 +113,9 @@ public class ChoosePropertyDialog extends javax.swing.JDialog
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        chooseButton.setText("Choose");
+        chooseButton.setText("Auswählen");
 
-        statsButton.setText("Stats");
+        statsButton.setText("Statistik");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -209,7 +209,7 @@ public class ChoosePropertyDialog extends javax.swing.JDialog
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                ChoosePropertyDialog dialog = new ChoosePropertyDialog(new javax.swing.JFrame(), new Player("Jordan", null));
+                ChoosePropertyDialog dialog = new ChoosePropertyDialog(new javax.swing.JFrame(), new Player("Thomas", null));
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
 
                     @Override

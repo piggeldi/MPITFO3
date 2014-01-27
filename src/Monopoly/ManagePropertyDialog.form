@@ -6,7 +6,6 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -118,7 +117,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Number of Houses that you want: "/>
+        <Property name="text" type="java.lang.String" value="Anzahl der H&#xe4;user: "/>
       </Properties>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">
@@ -161,24 +160,25 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="buyHousesButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Buy Houses"/>
+            <Property name="text" type="java.lang.String" value="Haus kaufen"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="mortgageButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Mortgage"/>
+            <Property name="text" type="java.lang.String" value="Hypothek"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="hotelButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Buy a Hotel"/>
+            <Property name="text" type="java.lang.String" value="Hotel kaufen"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Total Cost: "/>
+        <Property name="text" type="java.lang.String" value="Gesamte Kosten : "/>
       </Properties>
     </Component>
   </SubComponents>

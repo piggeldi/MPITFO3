@@ -2,7 +2,7 @@ package Monopoly;
 
 /**
  *
- * @authore Frederik
+ * @authore Thomas
  */
 public class Card 
 {

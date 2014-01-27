@@ -186,15 +186,16 @@ public class ManagePropertyDialog extends javax.swing.JDialog
             }
         });
 
-        jLabel1.setText("Number of Houses that you want: ");
+        jLabel1.setText("Anzahl der Häuser: ");
 
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        buyHousesButton.setText("Buy Houses");
+        buyHousesButton.setText("Haus kaufen");
 
-        mortgageButton.setText("Mortgage");
+        mortgageButton.setText("Hypothek");
 
-        hotelButton.setText("Buy a Hotel");
+        hotelButton.setText("Hotel kaufen");
+        hotelButton.setToolTipText("");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -220,7 +221,7 @@ public class ManagePropertyDialog extends javax.swing.JDialog
                 .addContainerGap())
         );
 
-        jLabel2.setText("Total Cost: ");
+        jLabel2.setText("Gesamte Kosten : ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
