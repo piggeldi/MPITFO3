@@ -90,7 +90,6 @@ public class TradeDialog extends javax.swing.JDialog
             money = m;
             this.prop = prop;
             checkBox = c;
-                    
         }
         @Override
         public void actionPerformed(ActionEvent e) 
@@ -104,12 +103,12 @@ public class TradeDialog extends javax.swing.JDialog
                     
                     if(x > p.getBalance())
                     {
-                        JOptionPane.showMessageDialog(null, "The String "+ text.getText() + " is greater than the current balance of $"+p.getBalance() + ", try again");
+                        JOptionPane.showMessageDialog(null, "Der Text "+ text.getText() + " ist größer als das aktuelle Guthaben von $"+p.getBalance() + ", bitte nochmal");
                     }
                 }
                 catch(NumberFormatException ex)
                 {
-                    JOptionPane.showMessageDialog(null, "The String "+ text.getText() + " isn't a real number, try again");
+                    JOptionPane.showMessageDialog(null, "Der Text "+ text.getText() + " ist keine Zahl, bitte nochmal");
                     isNum = false;
                 }
                 if(isNum)
@@ -150,13 +149,13 @@ public class TradeDialog extends javax.swing.JDialog
         this.p1 = p1;
         this.p2 = p2;
         initComponents();
-        setTitle(p1.getName() + " trading with " + p2.getName());
+        setTitle(p1.getName() + " handelt mit " + p2.getName());
         propsP1 = new ArrayList<>();
         propsP2 = new ArrayList<>();
         p1Trade = new ArrayList<>();
         p2Trade = new ArrayList<>();
-        p1NameLabel.setText("Player 1: " +p1.getName());
-        p2NameLabel.setText("Player 2: " +p2.getName());
+        p1NameLabel.setText("Spieler 1: " +p1.getName());
+        p2NameLabel.setText("Spieler 2: " +p2.getName());
         
         p1AddButton.addActionListener(new AddListener(p1ComboBox, this.p1, 1, p1MoneyField, p1MoneyLabel, p1PropLabel, p1AddProperty));
         p2AddButton.addActionListener(new AddListener(p2ComboBox, this.p2, 2, p2MoneyField, p2MoneyLabel, p2PropLabel, p2AddProperty));
@@ -202,17 +201,17 @@ public class TradeDialog extends javax.swing.JDialog
 
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        p1NameLabel.setText("Player 1: ");
+        p1NameLabel.setText("Spieler 1:");
 
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        jLabel2.setText("Money $: ");
+        jLabel2.setText("Geld $: ");
 
         p1ComboBox.setModel(new javax.swing.DefaultComboBoxModel(p1.getPropertyNames()));
 
-        p1AddButton.setText("Add");
+        p1AddButton.setText("Hinzufügen");
 
-        p1AddProperty.setText("Add Property");
+        p1AddProperty.setText("Eigentum hinzufügen");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -253,9 +252,10 @@ public class TradeDialog extends javax.swing.JDialog
                 .addContainerGap())
         );
 
-        aLabel.setText("Money Offer: $ ");
+        aLabel.setText("Gebot: $ ");
 
-        p1PropLabel.setText("Property Offers: ");
+        p1PropLabel.setText("Gebote Eigentum: ");
+        p1PropLabel.setToolTipText("");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -297,21 +297,21 @@ public class TradeDialog extends javax.swing.JDialog
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        tradeButton.setText("Trade!");
+        tradeButton.setText("Handeln!");
 
         jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        p2NameLabel.setText("Player 2: ");
+        p2NameLabel.setText("Spieler 2: ");
 
         jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        jLabel5.setText("Money $: ");
+        jLabel5.setText("Geld $: ");
 
         p2ComboBox.setModel(new javax.swing.DefaultComboBoxModel(p2.getPropertyNames()));
 
-        p2AddButton.setText("Add");
+        p2AddButton.setText("Hinzufügen");
 
-        p2AddProperty.setText("Add Property");
+        p2AddProperty.setText("Eigentum hinzufügen");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -352,9 +352,10 @@ public class TradeDialog extends javax.swing.JDialog
                 .addContainerGap())
         );
 
-        aLabel2.setText("Money Offer: $");
+        aLabel2.setText("Gebot: $");
 
-        p2PropLabel.setText("Propety Offers: ");
+        p2PropLabel.setText("Gebote Eigentum: ");
+        p2PropLabel.setToolTipText("");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -405,7 +406,7 @@ public class TradeDialog extends javax.swing.JDialog
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(86, 86, 86)
                 .addComponent(tradeButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
